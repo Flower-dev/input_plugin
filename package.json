@@ -1,7 +1,6 @@
 {
   "name": "input_plugin",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
@@ -42,5 +41,19 @@
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flower-dev/input_plugin.git"
+  },
+  "author": "flowerdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flower-dev/input_plugin/issues"
+  },
+  "homepage": "https://github.com/Flower-dev/input_plugin#readme"
 }
