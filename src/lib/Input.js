@@ -21,7 +21,7 @@ Input.defaultProps = {
 // ------------------------------------
 
 
-export default function Input({ type, name, placeholder, onChange, required, min }) {
+export function Input({ type, name, placeholder, onChange, required, min }) {
     
     const [initialValue, setInitialValue] = useState('');
 
