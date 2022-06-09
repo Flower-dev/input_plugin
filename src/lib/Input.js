@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
 
@@ -26,18 +26,20 @@ export function Input({ type, name, placeholder, onChange, required, min }) {
     const [initialValue, setInitialValue] = useState('');
 
     return  (
-        <input 
-            className='inputForm' 
-            type={type}
-            name={name}
-            required={required}
-            placeholder={placeholder}
-            min={min} 
-            value={initialValue}   
-            onChange={(e) => {
-                setInitialValue(e.target.value)
-                onChange(e.target.value)
-            }} 
-        />
+        <Fragment>
+            <input 
+                className='inputForm' 
+                type={type}
+                name={name}
+                required={required}
+                placeholder={placeholder}
+                min={min} 
+                value={initialValue}   
+                onChange={(e) => {
+                    setInitialValue(e.target.value)
+                    onChange(e.target.value)
+                }} 
+            />
+        </Fragment>
     )
 }
